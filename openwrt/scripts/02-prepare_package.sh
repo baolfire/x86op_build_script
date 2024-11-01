@@ -153,6 +153,8 @@ git clone https://github.com/sbwml/luci-app-mentohust package/new/mentohust
 # custom packages
 rm -rf feeds/packages/utils/coremark feeds/luci/applications/luci-app-filebrowser
 git clone https://$github/sbwml/openwrt_pkgs package/new/custom --depth=1
+#rm -rf feeds/package/new/custom/luci-app-adguardhome
+
 # coremark - prebuilt with gcc15
 if [ "$platform" = "rk3568" ]; then
     curl -s https://$mirror/openwrt/patch/coremark/coremark.aarch64-4-threads > package/new/custom/coremark/src/musl/coremark.aarch64
